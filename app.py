@@ -3,6 +3,8 @@ import pickle
 import string
 from nltk.corpus import stopwords
 import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
 from nltk.stem.porter import PorterStemmer
 
 ps =  PorterStemmer()
@@ -21,7 +23,7 @@ st.markdown("""
 
 def transform_text(text):
     text = text.lower()
-    text = text.split()
+    text = nltk.word_tokenize(text)
 
     y = []
     for i in text:
