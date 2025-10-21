@@ -21,7 +21,7 @@ st.markdown("""
 
 def transform_text(text):
     text = text.lower()
-    text = nltk.word_tokenize(text)
+    text = text.split()
 
     y = []
     for i in text:
@@ -59,3 +59,4 @@ if st.button('Predict'):
         st.header("The given message is Spam")
     else:
         st.header("The given message is Not Spam")
+
