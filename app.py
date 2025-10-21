@@ -13,7 +13,7 @@ ps =  PorterStemmer()
 st.markdown("""
     <style>
     .stApp {
-        background-image: url("https://github.com/ayshaimamx/spam_classification/raw/main/background.jpg");
+        background-image: url("https://github.com/ayshaimamx/spam_classification/raw/main/finalbg.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -62,6 +62,7 @@ if st.button('Predict'):
         st.header("The given message is Spam")
     else:
         st.header("The given message is Not Spam")
+
 
 
 
